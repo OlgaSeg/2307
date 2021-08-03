@@ -65,7 +65,8 @@ section {
     max-width: 754px;
     font-weight: 400;
     font-size: 27px;
-        margin: 0 auto;
+    line-height: 1, 5em;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -130,8 +131,12 @@ h2 {
 }
 
 
+.footer__container p {
+    width: 754px;
+    height: 102px;
+}
 
-.slider{
+.slider {
     background-color: var(--variable-yellow);
 
 }
@@ -174,13 +179,8 @@ h2 {
     list-style: none;
     position: absolute;
     bottom: 75px;
-    }
-    .slider_navigation_items:hover
-    {
-        background-color: var(--variable-yellow);
-       
-    }
-    /* 2я часть */
+
+}
 
 .content>.container {
     flex-wrap: wrap;
@@ -188,9 +188,13 @@ h2 {
     align-items: center;
 }
 
+
+
 .content h2 {
     font-size: 27px;
 }
+
+
 
 .content_under img {
     width: 100%;
@@ -206,30 +210,56 @@ h2 {
 }
 
 /* 3 я секция */
-.footer
-{
+
+/* .footer {
     background-color: var(--variable-black);
+    /* display: flex; */
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.footer__container
-{
-    
-    flex-basis:100% ;
+
+.footer__container h2 {
+    color: var(--variable-yellow);
+
+
+}
+
+.footer__container {
+    border: white solid 2px;
+    flex-basis: 70%;
     justify-content: center;
 }
-.footer__container h2
-{
-   text-align: center;
+
+.footer_forms {
+    flex-basis: 90%;
 }
 
-.footer_forms
-{
-    margin: 20px auto 40px 
-   
+ul {
+
+    /* border: #b6f094 solid 5px; */
+    display: flex;
+    flex-basis: 90%;
+    flex-wrap: nowrap;
+
 }
 
+li {
+    flex-basis: 20%;
+    list-style: none;
+}
+
+.first {
+    flex-basis: 40%;
+}
+
+.footer_forms {
+
+    margin: 0 auto;
+    border: #fcdb00 solid 1px;
+    text-align: center;
+
+}
 
 
 button {
@@ -241,36 +271,7 @@ button {
 }
 
 input {
-    width: 560px;
+    width: 734px;
     height: 50px;
-   /* margin: 0 90px  40px 20px ; 
-    */
-    justify-content: space-around;
-
-}
-ul
-{
-    display: flex;
-    justify-content:space-around;
-   
-}
-
-.footer_finish li
-{
-    list-style-type: none;
-    flex-wrap: NOwrap;
-    flex-basis: 5%;
-    
-}
-
-.footer__container h2
-{
-    color: var(--variable-yellow);
-    
-}
-
-.first
-{
-    flex-basis: 367px;
-    
-}
+    margin: 0 auto 40px;
+} 
